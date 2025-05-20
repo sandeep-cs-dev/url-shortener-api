@@ -1,23 +1,7 @@
-from sqids import Sqids
 
-# sqids = Sqids()
 alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-
-sqids = Sqids(alphabet=alphabet, min_length=6)
-
-
 # [1,2,3] -> 86Rf07
-def encode_num(numbers):
-    return sqids.encode(numbers)
-
-
-# 86Rf07 -> [1,2,3]
-def decode_num(encode_numbers):
-    return sqids.decode(encode_numbers)
-
-
 # Base62 character set
-
 def base62_encode(num):
     if num == 0:
         return alphabet[0]
