@@ -1,0 +1,68 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Pytest cache
+.pytest_cache/
+
+# Virtual environments (anywhere in the project)
+**/venv/
+**/.venv/
+
+# Environments created by pipenv or poetry
+Pipfile.lock
+poetry.lock
+
+# VS Code settings
+.vscode/
+
+# mypy type check cache
+.mypy_cache/
+
+# Local SQLite DBs
+*.sqlite3
+*.db
+
+# MacOS metadata files
+.DS_Store
+
+# Logs
+*.log
+
+# dotenv environment variables files
+.env
+.env.*
+
+# jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE-specific
+.idea/
+*.sublime-project
+*.sublime-workspace
+
