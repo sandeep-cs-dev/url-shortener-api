@@ -50,7 +50,7 @@ class SnowFlake:
                 raise RuntimeError(f"Clock moved backwards. Refusing to generate ID for {current_timestamp}")
 
             if current_timestamp == self.last_timestamp:
-                self.sequence = (self.sequence + 1) & self.SEQUENCE_MAX
+                self.sequence = (self.sequence + 1) & self.SEQUENCE_MAX  # equivalent to modulo
                 # all the sequence used for a given timestamp
                 if self.sequence == 0:
                     wait_until()
